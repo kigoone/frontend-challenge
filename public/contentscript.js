@@ -22,10 +22,10 @@ element.style.cssText = `
       background-position-y: center;
 `;
 
-let innerElement = document.createElement('div');
-const innerInjectedText = document.createTextNode(`climate change`);
-innerElement.classList.add('modal');
-innerElement.style.cssText = `
+let Element = document.createElement('div');
+const InjectedText = document.createTextNode(`climate change`);
+Element.classList.add('modal');
+Element.style.cssText = `
       display: none;
       position: absolute;
       top: 100px;
@@ -35,7 +35,7 @@ innerElement.style.cssText = `
       backdrop-filter: blur(20px);
       padding:20px;
 `;
-innerElement.appendChild(innerInjectedText);
+Element.appendChild(innerInjectedText);
 element.addEventListener('mouseover', function () {
   innerElement.style.display = 'block';
 });
@@ -48,4 +48,4 @@ const parentElement = document.querySelector(
 );
 
 parentElement.prepend(element);
-parentElement.prepend(innerElement);
+parentElement.prepend(Element);
