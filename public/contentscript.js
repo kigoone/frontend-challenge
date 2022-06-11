@@ -37,10 +37,10 @@ Element.style.cssText = `
 `;
 Element.appendChild(innerInjectedText);
 element.addEventListener('mouseover', function () {
-  innerElement.style.display = 'block';
+  Element.style.display = 'block';
 });
 element.addEventListener('mouseleave', function () {
-  innerElement.style.display = 'none';
+  Element.style.display = 'none';
 });
 
 const parentElement = document.querySelector(
